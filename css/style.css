@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lilita One', monospace;
+    font-size: 35px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section:not(.bg-block) {
+    padding: 80px 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+#nav-block {
+    width: 100%;
+    height: 100%;
+}
+
+.bg-header {
+    height: 100%;
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+.bg-header img {
+    height: 100%;
+    width: 100%;
+}
+
+.bg-header-title {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: 300px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 110px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    width: 100%;
+}
+
+.navigation-list {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 9999999;
+    transform: translate(-50%);
+    margin: 0 auto;
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    background-color: #161616;
+    color: white;
+}
+
+.navigation-list li {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'SupercellText-Medium', Helvetica, Arial, sans-serif;
+    height: 100%;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.navigation-list li.header-logo {
+    width: 120px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 25px;
+}
+
+.navigation-list .header-logo_title {
+    width: 120px;
+    height: 90px;
+    color: white;
+    display: flex;
+    padding: 30px 0;
+}
+
+.navigation-list .header-nav-menu {
+    width: 100%;
+    height: 90px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
+    margin: 0 20px 0 0;
+}
+
+.navigation-list .header-nav-item {
+    height: 90px;
+    color: white;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-list .header-auth-item {
+    height: 40px;
+    color: white;
+    background-color: #4B4B4B;
+    padding: 20px;
+    margin: 25px 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: none;
+}
+
+.navigation-list li a {
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation-list li img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navigation-list li:hover {
+    background-color: #333;
+}
+
+.mobile-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-block .smartphone-with-game, .mobile-block .text-box {
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-block .text-box.onright {
+    align-items: flex-end;
+    text-align: right;
+    color: #fff;
+}
+
+.mobile-block .text-box.onleft {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.mobile-block .smartphone-with-game img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-box > p, .text-box > h3, .text-box span {
+    width: 70%;
+    margin: 20px 10px;
+}
+
+.about-brawl-bloc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.ascii-bloc {
+    width: 50%;
+    margin: 0 50px 0 180px;
+    font-size: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+.code-snippet-text {
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+}
+
+.follow-us {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 20px !important;
+}
+
+.follow-footer .follow-us {
+    margin: 0 !important;
+}
+
+.store-logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+}
+
+.store-logos.download img {
+    max-width: 100%;
+    margin-right: 20px;
+    height: 50px;
+}
+
+.store-logos.footer-store img {
+    height: 50px;
+    margin-right: 20px;
+    max-width: 100%;
+}
+
+.store-logos.social img {
+    max-width: 100%;
+    height: 20px;
+    margin-right: 20px;
+}
+
+section.social {
+    background-image: url(https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/bg_gamesocial_brawlstars.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 20px 200px 20px;
+}
+
+footer .footer-content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+footer .footer-social {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+}
+
+footer .footer-menu ul {
+    padding: 20px;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .footer-menu li {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+footer .footer-menu li:hover {
+    text-decoration: underline;
+}
+
+.company-info {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-wrap: none;
+}
+
+.company-info span {
+    line-height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #999;
+    font-size: 12px;
+    width: 100px;
+}
+
+.company-info .logo-footer {
+    padding: 10px;
+    width: 100px;
+}
+
+.company-info .logo-footer img {
+    max-width: 100%;
+}

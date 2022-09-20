@@ -28,4 +28,4 @@
    - _js libs_
 
 
-> Figma Mockup [here](https://www.figma.com/file/EhHjMSYBQ4xSgbygUO2b65/lab-1?node-id=0%3A1)
+> Figma Mockup [here](https://www.figma.com/file/RRGWF9yT4gkw7T1HOESwHJ/Brawlpedia-Web-Project?node-id=0%3A1)

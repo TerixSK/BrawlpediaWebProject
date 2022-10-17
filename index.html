@@ -9,6 +9,8 @@
     <meta name="author" content="SitePoint">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon"
           href="https://www.freepnglogos.com/uploads/logo-brawl-stars-png/transparent-brawl-stars-transparent-background-9.png">
 </head>
@@ -28,24 +30,34 @@
                     </div>
                 </a>
                 <div class="header-nav-menu">
-                    <div class="header-nav-item">
-                        <h2>Brawlers</h2>
+                    <div style="display: flex">
+                        <div class="header-nav-item"
+                            onclick="alert('Я ебал корову')"
+                        >
+                            <h3>Brawlers</h3>
+                        </div>
+                        <div class="header-nav-item"
+                             onclick="alert('Я ебал корову')"
+                        >
+                            <h3>Game modes</h3>
+                        </div>
+                        <div class="header-nav-item"
+                             onclick="alert('Я ебал корову')"
+                        >
+                            <h3>Maps</h3>
+                        </div>
                     </div>
-                    <div class="header-nav-item">
-                        <h2>Game modes</h2>
-                    </div>
-                    <div class="header-nav-item">
-                        <h2>Maps</h2>
-                    </div>
-                    <div class="header-nav-item">
-                    </div>
-                    <div class="header-nav-item">
-                    </div>
-                    <div class="header-auth-item">
-                        <h3>Sign in</h3>
-                    </div>
-                    <div class="header-auth-item">
-                        <h3>Sign up</h3>
+                    <div style="display: flex">
+                        <div class="header-auth-item nowrap"
+                             onclick="alert('Я ебал корову')"
+                        >
+                            <h4>Sign in</h4>
+                        </div>
+                        <div class="header-auth-item nowrap"
+                             onclick="alert('Я ебал корову')"
+                        >
+                            <h4>Sign up</h4>
+                        </div>
                     </div>
                 </div>
             </ul>
@@ -56,8 +68,8 @@
             <div class="bg-header"><img src="https://www.playstrong.it/wp-content/uploads/2019/02/brawl_sunset.jpg"
                                         alt="main-bg-image"/></div>
             <div class="bg-header-title">
-                <h3>Brawlpedia</h3>
-                <h6>Website for those who want to know more about Brawl Starts</h6>
+                <h1>Brawlpedia</h1>
+                <h3>Website for those who want to know more about Brawl Starts</h3>
             </div>
         </section>
         <section class="mobile-block teamup" id="teamup">
@@ -181,7 +193,7 @@
   } else {
       myBrawler.sebatsyInUjase();
   }
-                </pre>
+                    </pre>
             </div>
         </section>
     </main>

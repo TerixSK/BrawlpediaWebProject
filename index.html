@@ -37,7 +37,7 @@
                             <h3>Brawlers</h3>
                         </div>
                         <div class="header-nav-item"
-                             onclick="alert('Hello')"
+                             onclick="goToGameModes()"
                         >
                             <h3>Game modes</h3>
                         </div>
@@ -263,5 +263,12 @@
         </div>
     </footer>
 </div>
+
+<script>
+    function goToGameModes() {
+        window.location.href = "http://localhost:63342/web_project/game_modes_page.html";
+    }
+</script>
+
 </body>
 </html>

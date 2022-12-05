@@ -98,10 +98,10 @@ section:not(.bg-block) {
 }
 
 .navigation-list .header-logo_title {
-    width: 120px;
     color: white;
     display: flex;
-    padding: 30px 0;
+    padding: 20px 20px;
+    text-decoration: none;
 }
 
 .navigation-list .header-nav-menu {
@@ -117,9 +117,15 @@ section:not(.bg-block) {
 .navigation-list .header-nav-item {
     cursor: pointer;
     color: white;
-    padding: 30px 30px;
+    padding: 20px 20px;
     display: flex;
     justify-content: center;
+}
+
+.selected-nav-item {
+    border: 2px #999999 solid;
+    background: #4B4B4B;
+    border-radius: 20px;
 }
 
 .navigation-list .header-auth-item {

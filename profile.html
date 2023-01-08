@@ -8,7 +8,7 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="css/game_modes_style.css">
+    <link rel="stylesheet" href="css/profile_style.css">
     <link rel="stylesheet" href="css/adaptive.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon"
@@ -25,7 +25,7 @@
                         alt="app-logo"/>
                 </li>
                 <a style="text-decoration: none" href="#">
-                    <div class="header-logo_title",
+                    <div class="header-logo_title" ,
                          onclick="goToStartPage()">
                         <h2>Brawlpedia</h2>
                     </div>
@@ -33,19 +33,17 @@
                 <div class="header-nav-menu">
                     <div style="display: flex">
                         <div class="header-nav-item"
-                             onclick="alert('Hello')"
+                             onclick="goToBrawlers()"
                         >
                             <h3>Brawlers</h3>
                         </div>
-                        <div class="header-nav-item selected-nav-item"
+                        <div class="header-nav-item"
                              onclick="goToGameModes()"
                         >
                             <h3>Game modes</h3>
                         </div>
-                        <div class="header-nav-item"
-                             onclick="alert('Hello')"
-                        >
-                            <h3>Maps</h3>
+                        <div class="header-nav-item selected-nav-item">
+                            <h3>Profile</h3>
                         </div>
                     </div>
                     <div style="display: flex">
@@ -66,108 +64,17 @@
     </nav>
     <main class="page-background">
         <div class="page-content">
-            <div class="page-name">Game modes</div>
+            <div class="page-name">Profile</div>
             <div class="wrapper">
-                <section class="mode-card solo-showdown-back-color">
-                    <div class="mode-label">
-                        <img src="../assets/images/Solo-Showdown.webp" alt="?" class="mode-icon">
-                        <div class="">
-                            <div class="mode-name">Solo Showdown</div>
-                            <div class="map-name">Battle Royale</div>
-                        </div>
-                    </div>
-                    <div class="solo-showdown-background"></div>
-                </section>
-                <section class="mode-card bounty-back-color">
-                    <div class="mode-label">
-                        <img src="../assets/images/Bounty.webp" alt="?" class="mode-icon">
-                        <div class="">
-                            <div class="mode-name">Bounty</div>
-                            <div class="map-name">Headhunting</div>
-                        </div>
-                    </div>
-                    <div class="bounty-background"></div>
-                </section>
-                <section class="mode-card heist-back-color">
-                    <div class="mode-label">
-                        <img src="../assets/images/Heist.webp" alt="?" class="mode-icon">
-                        <div class="">
-                            <div class="mode-name">Heist</div>
-                            <div class="map-name">Working as a burglar</div>
-                        </div>
-                    </div>
-                    <div class="heist-background"></div>
-                </section>
-                <section class="mode-card knockout-back-color">
-                    <div class="mode-label">
-                        <img src="../assets/images/Knockout.png" alt="?" class="mode-icon">
-                        <div class="">
-                            <div class="mode-name">Knockout</div>
-                            <div class="map-name">New Perspective</div>
-                        </div>
-                    </div>
-                    <div class="knockout-background"></div>
-                </section>
-                <section class="mode-card hotZone-back-color">
-                    <div class="mode-label">
-                        <img src="../assets/images/HotZone.png" alt="?" class="mode-icon">
-                        <div class="">
-                            <div class="mode-name">Hot zone</div>
-                            <div class="map-name">Ring of Fire</div>
-                        </div>
-                    </div>
-                    <div class="hot-zone-background"></div>
-                </section>
-                <section class="mode-card gems-back-color">
-                    <div class="mode-label">
-                        <img src="../assets/images/Gem-Grab.png" alt="?" class="mode-icon">
-                        <div class="">
-                            <div class="mode-name">Gem Grab</div>
-                            <div class="map-name">Hard Rock Mine</div>
-                        </div>
-                    </div>
-                    <div class="gems-background"></div>
-                </section>
-                <section class="mode-card brawl-ball-back-color">
-                    <div class="mode-label">
-                        <img src="../assets/images/Brawl-Ball.png" alt="?" class="mode-icon">
-                        <div class="">
-                            <div class="mode-name">Brawl Ball</div>
-                            <div class="map-name">Pinball Dreams</div>
-                        </div>
-                    </div>
-                    <div class="brawl-ball-background"></div>
-                </section>
-                <section class="mode-card boss-fight-back-color">
-                    <div class="mode-label">
-                        <img src="../assets/images/Boss-Fight.png" alt="?" class="mode-icon">
-                        <div class="">
-                            <div class="mode-name">Boss Fight</div>
-                            <div class="map-name">The Mighty Adversary</div>
-                        </div>
-                    </div>
-                    <div class="boss-fight-background"></div>
-                </section>
-                <section class="mode-card duels-back-color">
-                    <div class="mode-label">
-                        <img src="../assets/images/Duels.png" alt="?" class="mode-icon">
-                        <div class="">
-                            <div class="mode-name">Duels</div>
-                            <div class="map-name">One on one</div>
-                        </div>
-                    </div>
-                    <div class="duels-background"></div>
-                </section>
-                <section class="mode-card last-stand-back-color">
-                    <div class="mode-label">
-                        <img src="../assets/images/Last-Stand.webp" alt="?" class="mode-icon">
-                        <div class="">
-                            <div class="mode-name">Last Stand</div>
-                            <div class="map-name">Help the robot</div>
-                        </div>
-                    </div>
-                    <div class="last-stand-background"></div>
-                </section>
+                <h5 class="header">Want to save the nicknames of your friends in Brawl Stars? Enter the nickname in the
+                    field below, and we will save it.</h5>
+                <form class="profile-form" id="diary-form">
+                    <input type="text" id="friend-field" class="profile-form-friend-field">
+                    <input type="submit" value="Save" class="profile-form-submit-button">
+                </form>
+                <div class="friend-container" id="friend-container">
+
+                </div>
             </div>
         </div>
     </main>
@@ -240,8 +147,53 @@
 
 <script>
     function goToStartPage() {
+        if (window.location.href === '"http://localhost:63342/web_project/index.html') {
+            event.target.classList.remove("selected-nav-item")
+        }
+        event.target.classList.add("selected-nav-item")
         window.location.href = "http://localhost:63342/web_project/index.html";
     }
+
+    function goToBrawlers(event) {
+        window.location.href = "http://localhost:63342/web_project/brawlers.html";
+    }
+
+    function goToGameModes(event) {
+        window.location.href = "http://localhost:63342/web_project/game_modes.html";
+    }
+
+    if (localStorage.getItem("friends") === null) {
+        localStorage.setItem("friends", JSON.stringify([]))
+    }
+    const friends = JSON.parse(localStorage.getItem("friends"))
+
+    function buildFriends() {
+        const friendContainer = document.getElementById("friend-container")
+        let newContent = ""
+        for (let interest in friends) {
+            newContent += "<div class=\"friend-container-friend\">"+ friends[interest] +"</div>"
+        }
+        friendContainer.innerHTML = newContent
+    }
+
+    function saveFriend(event) {
+        event.preventDefault()
+        const friendField = document.getElementById("friend-field")
+        if (friendField.value !== "") {
+            friends.push(friendField.value)
+            localStorage.setItem("friends", JSON.stringify(friends))
+            friendField.value = ""
+            buildFriends()
+        }
+    }
+
+    function ready() {
+        const form = document.querySelector('form')
+        form.addEventListener('submit', saveFriend)
+        buildFriends()
+    }
+
+    document.addEventListener("DOMContentLoaded", ready);
 </script>
 
 </body>

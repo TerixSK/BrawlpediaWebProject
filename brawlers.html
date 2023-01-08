@@ -1,0 +1,158 @@
+<!doctype html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+    <title>Brawlpedia</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/game_modes_style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon"
+          href="https://www.freepnglogos.com/uploads/logo-brawl-stars-png/transparent-brawl-stars-transparent-background-9.png">
+</head>
+
+<body>
+<div id="container">
+    <nav id="nav-block">
+        <div class="navigation">
+            <ul class="navigation-list">
+                <li class="header-logo"><img
+                        src="https://www.freepnglogos.com/uploads/logo-brawl-stars-png/transparent-brawl-stars-transparent-background-9.png"
+                        alt="app-logo"/>
+                </li>
+                <a style="text-decoration: none" href="#">
+                    <div class="header-logo_title" ,
+                         onclick="goToStartPage()">
+                        <h2>Brawlpedia</h2>
+                    </div>
+                </a>
+                <div class="header-nav-menu">
+                    <div style="display: flex">
+                        <div class="header-nav-item selected-nav-item"
+                        >
+                            <h3>Brawlers</h3>
+                        </div>
+                        <div class="header-nav-item"
+                             onclick="goToGameModes()"
+                        >
+                            <h3>Game modes</h3>
+                        </div>
+                        <div class="header-nav-item" , onclick="goToProfile()">
+                            <h3>Profile</h3>
+                        </div>
+                    </div>
+                    <div style="display: flex">
+                        <div class="header-auth-item nowrap"
+                             onclick="alert('Hello')"
+                        >
+                            <h4>Sign in</h4>
+                        </div>
+                        <div class="header-auth-item nowrap"
+                             onclick="alert('Hello')"
+                        >
+                            <h4>Sign up</h4>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <main class="page-background">
+        <div class="page-content">
+            <div class="page-name">Brawlers</div>
+            <div class="wrapper">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content" id='about'>
+            <div class="footer-social">
+                <div class="follow-footer">
+                    <span class="follow-us">FOLLOW BRAWL STARS ON</span>
+                    <div class="store-logos social">
+                        <a href="https://www.reddit.com/r/Brawlstars/"> <img
+                                src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_reddit.png"
+                                alt="reddit-image"/>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCooVYzDxdwTtGYAkcPmOgOw"> <img
+                                src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_youtube.png"
+                                alt="youtube-image"/>
+                        </a>
+                        <a href="https://www.facebook.com/brawlstars"> <img
+                                src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_facebook.png"
+                                alt="facebook-image"/>
+                        </a>
+                        <a href="https://www.instagram.com/BrawlStars/"> <img
+                                src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_instagram.png"
+                                alt="instagram-image"/>
+                        </a>
+                        <a href="https://twitter.com/BrawlStars"> <img
+                                src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_twitter.png"
+                                alt="twitter-image"/>
+                        </a>
+                        <a href="https://www.tiktok.com/@brawlstars"> <img
+                                src="https://cdn.supercell.com/supercell.com/220912063309/all/themes/supercell/img/18/icon_gs_tiktok.svg"
+                                alt="tiktok-image"/>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="store-logos footer-store">
+                        <a href="https://apps.apple.com/ua/app/brawl-stars/id1229016807?l=ru"> <img
+                                src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/footer_appstore.png"
+                                alt="app-store-image"/>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=ru&gl=US">
+                            <img
+                                    src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/footer_googleplay.png"
+                                    alt="google-play-image"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li>About Author</li>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="company-info">
+                    <span>
+                        Brawlpedia Inc.
+                        St. Petersburg
+                        Russia
+                    </span>
+                <span class="logo-footer"><img
+                        src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/logo_supercell@2x.png"
+                        alt="super-cell-logo"/></span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    function goToStartPage() {
+        if (window.location.href === '"http://localhost:63342/web_project/index.html') {
+            event.target.classList.remove("selected-nav-item")
+        }
+        event.target.classList.add("selected-nav-item")
+        window.location.href = "http://localhost:63342/web_project/index.html";
+    }
+
+    function goToGameModes(event) {
+        window.location.href = "http://localhost:63342/web_project/game_modes.html";
+    }
+
+    function goToProfile(event) {
+        window.location.href = "http://localhost:63342/web_project/profile.html";
+    }
+</script>
+
+</body>
+</html>

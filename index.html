@@ -32,7 +32,7 @@
                 <div class="header-nav-menu">
                     <div style="display: flex">
                         <div class="header-nav-item"
-                            onclick="alert('Hello')"
+                            onclick="goToBrawlers()"
                         >
                             <h3>Brawlers</h3>
                         </div>
@@ -42,9 +42,9 @@
                             <h3>Game modes</h3>
                         </div>
                         <div class="header-nav-item"
-                             onclick="alert('Hello')"
+                             onclick="goToProfile()"
                         >
-                            <h3>Maps</h3>
+                            <h3>Profile</h3>
                         </div>
                     </div>
                     <div style="display: flex">
@@ -265,8 +265,16 @@
 </div>
 
 <script>
-    function goToGameModes() {
-        window.location.href = "http://localhost:63342/web_project/game_modes_page.html";
+    function goToBrawlers(event) {
+        window.location.href = "http://localhost:63342/web_project/brawlers.html";
+    }
+
+    function goToGameModes(event) {
+        window.location.href = "http://localhost:63342/web_project/game_modes.html";
+    }
+
+    function goToProfile(event) {
+        window.location.href = "http://localhost:63342/web_project/profile.html";
     }
 </script>
 

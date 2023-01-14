@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon"
           href="https://www.freepnglogos.com/uploads/logo-brawl-stars-png/transparent-brawl-stars-transparent-background-9.png">
+    <script type="text/javascript" src="scripts/game_modes_script.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <div class="navigation">
             <ul class="navigation-list">
                 <li class="header-logo"><img
-                        src="https://www.freepnglogos.com/uploads/logo-brawl-stars-png/transparent-brawl-stars-transparent-background-9.png"
+                        src="../assets/images/header_logo.png"
                         alt="app-logo"/>
                 </li>
                 <a style="text-decoration: none" href="#">
@@ -237,24 +238,6 @@
         </div>
     </footer>
 </div>
-
-<script>
-    function goToStartPage() {
-        if (window.location.href === '"http://localhost:63342/web_project/index.html') {
-            event.target.classList.remove("selected-nav-item")
-        }
-        event.target.classList.add("selected-nav-item")
-        window.location.href = "http://localhost:63342/web_project/index.html";
-    }
-
-    function goToBrawlers(event) {
-        window.location.href = "http://localhost:63342/web_project/brawlers.html";
-    }
-
-    function goToProfile(event) {
-        window.location.href = "http://localhost:63342/web_project/profile.html";
-    }
-</script>
 
 </body>
 </html>

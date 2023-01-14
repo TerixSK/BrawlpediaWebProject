@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon"
           href="https://www.freepnglogos.com/uploads/logo-brawl-stars-png/transparent-brawl-stars-transparent-background-9.png">
+    <script type="text/javascript" src="scripts/profile_script.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <div class="navigation">
             <ul class="navigation-list">
                 <li class="header-logo"><img
-                        src="https://www.freepnglogos.com/uploads/logo-brawl-stars-png/transparent-brawl-stars-transparent-background-9.png"
+                        src="../assets/images/header_logo.png"
                         alt="app-logo"/>
                 </li>
                 <a style="text-decoration: none" href="#">
@@ -144,57 +145,6 @@
         </div>
     </footer>
 </div>
-
-<script>
-    function goToStartPage() {
-        if (window.location.href === '"http://localhost:63342/web_project/index.html') {
-            event.target.classList.remove("selected-nav-item")
-        }
-        event.target.classList.add("selected-nav-item")
-        window.location.href = "http://localhost:63342/web_project/index.html";
-    }
-
-    function goToBrawlers(event) {
-        window.location.href = "http://localhost:63342/web_project/brawlers.html";
-    }
-
-    function goToGameModes(event) {
-        window.location.href = "http://localhost:63342/web_project/game_modes.html";
-    }
-
-    if (localStorage.getItem("friends") === null) {
-        localStorage.setItem("friends", JSON.stringify([]))
-    }
-    const friends = JSON.parse(localStorage.getItem("friends"))
-
-    function buildFriends() {
-        const friendContainer = document.getElementById("friend-container")
-        let newContent = ""
-        for (let interest in friends) {
-            newContent += "<div class=\"friend-container-friend\">"+ friends[interest] +"</div>"
-        }
-        friendContainer.innerHTML = newContent
-    }
-
-    function saveFriend(event) {
-        event.preventDefault()
-        const friendField = document.getElementById("friend-field")
-        if (friendField.value !== "") {
-            friends.push(friendField.value)
-            localStorage.setItem("friends", JSON.stringify(friends))
-            friendField.value = ""
-            buildFriends()
-        }
-    }
-
-    function ready() {
-        const form = document.querySelector('form')
-        form.addEventListener('submit', saveFriend)
-        buildFriends()
-    }
-
-    document.addEventListener("DOMContentLoaded", ready);
-</script>
 
 </body>
 </html>
